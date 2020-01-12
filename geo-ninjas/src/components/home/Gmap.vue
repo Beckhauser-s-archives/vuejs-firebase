@@ -31,7 +31,7 @@ export default {
                 users.docs.forEach(doc => {
                     let data = doc.data()
                     if (data.geolocation){
-                        console.log(data.geolocation.lat, data.geolocation.lng)
+                        // console.log(data.geolocation.lat, data.geolocation.lng)
                         let marker = new google.maps.Marker({
                             position: {
                                 lat: data.geolocation.lat, 
